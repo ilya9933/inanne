@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Founders Grotesk';
+  src: url('../fonts/FoundersGrotesk-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face  {
+  font-family: 'HelveticaNeueLT Com 55 Roman';
+  src: url('../fonts/HelveticaNeueLTCom-Roman.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face  {
+  font-family: 'HelveticaNeueLT Com 55 Roman';
+  src: url('../fonts/HelveticaNeueLTCom-Bd.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+$f_founder: "Founders Grotesk", serif;
+
+$f_helvetica: "HelveticaNeueLT Com 55 Roman", serif;
+

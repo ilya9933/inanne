@@ -1,0 +1,12 @@
+@import './fonts.scss';
+
+
+html {
+  font-family: $f_helvetica;
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+}
