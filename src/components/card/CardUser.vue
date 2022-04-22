@@ -15,9 +15,11 @@
             <span>{{ user.job }}</span>
           </div>
         </div>
-        <button :class="$style.button">
-          <img src="@/icon/linkedin.svg" width="45px" />
-        </button>
+        <div :class="$style.containerButton">
+          <button :class="$style.button">
+            <img src="@/icon/linkedin.svg" width="45px" />
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -31,7 +33,7 @@ export default {
   },
   data() {
     return {
-      noPhoto: require('@/static/photo/no-img-doc.jpeg'),
+      noPhoto: '/no-img-doc.jpeg',
     }
   },
 
@@ -101,14 +103,16 @@ export default {
   padding: 15px 0px 0px 0px;
 }
 
-.button {
+.containerButton {
   margin-top: auto;
   padding-top: 80px;
-  border-radius: 50%;
-  transition: all 0.3s ease-in-out;
-  &:hover > img {
+
+  .button {
+    transition: all 0.3s ease-in-out;
     border-radius: 50%;
-    box-shadow: 0px 0px 34px 5px #ffcaa1;
+    &:hover {
+      box-shadow: 0px 0px 34px 5px #ffcaa1;
+    }
   }
 
   @media (max-width: 1000px) {

@@ -1,10 +1,10 @@
 <template>
   <div>
     <header id="head" :class="$style.headerSection">
-      <video :class="$style.video" loop="loop" autoplay="" muted="">
+      <video :class="$style.video" loop="loop" autoplay muted>
         <source src="../static/Inanna.mp4" type="video/mp4" />
       </video>
-      <header-block :class="[$style.container, $style.containerAbsolute]" />
+      <header-block class="1" :class="[$style.container, $style.containerAbsolute]" />
     </header>
     <section id="about" :class="$style.about">
       <about-block :class="$style.container" />

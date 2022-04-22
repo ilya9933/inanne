@@ -54,7 +54,7 @@ export default {
 
     .title {
       height: 84px;
-      margin: 13px;
+      margin-bottom: 13px;
       font-size: 35px;
       line-height: 42px;
     }

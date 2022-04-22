@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.container">
+  <div class="2" :class="$style.container">
     <div :class="$style.topContent">
       <div :class="$style.logo">
         <img src="../icon/Vector.svg" width="70px" />
@@ -19,7 +19,7 @@
       </div>
     </div>
     <div :class="$style.bottomContent">
-      <a :style="{ marginRight: '210px' }" href="#info">
+      <a :style="{ marginRight: '210px' }" href="#about">
         <img src="../icon/arrow_cursor.svg" />
       </a>
       <h1 :class="$style.text">
@@ -114,16 +114,18 @@ export default {
 
 .navigationItem {
   @apply cursor-pointer;
+
+  &:hover {
+    .navigationItemText {
+      @apply border-b;
+    }
+  }
 }
 
 .navigationItemText {
   font-size: 20px;
   line-height: 32px;
   transition: all 0.3s ease-in-out;
-
-  &:hover {
-    @apply border-b;
-  }
 }
 
 .bottomContent {
